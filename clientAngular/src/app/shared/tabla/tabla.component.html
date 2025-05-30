@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Pais de nacimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (dato of datos; track (dato.columna1 && dato.columna2 && dato.columna3)) {
+        <tr>
+            <td>{{dato.columna1}}</td>
+            <td>{{dato.columna2}}</td>
+            <td>{{dato.columna3}}</td>
+        </tr>
+        }
+    </tbody>
+</table>
